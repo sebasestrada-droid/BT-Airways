@@ -1,61 +1,67 @@
-# ✈️ BT Airways
+# ✈️ Modelo Entidad-Relación — Línea Aérea
 
-## 📌 Descripción
+<p align="center">
+  <strong>Proyecto de Modelamiento de Bases de Datos</strong><br>
+  Duoc UC
+</p>
 
-BT Airways es un proyecto de modelamiento de una base de datos para una aerolínea.
+---
 
-El proyecto permite organizar la información de pasajeros, empleados, vuelos y reservas, estableciendo las relaciones entre ellos.
+## 📌 Sobre el proyecto
 
-## 🎯 Objetivo
+Este proyecto presenta el diseño de un **Modelo Entidad-Relación (MER)** para una línea aérea.
 
-Diseñar una base de datos organizada para gestionar la información principal de una aerolínea.
+El modelo permite representar y relacionar información sobre:
 
-## 🗂️ Entidades
+- ✈️ Aviones
+- 🛫 Vuelos
+- 👨‍💼 Empleados
+- 👨‍✈️ Pilotos
+- 🧑‍💼 Administrativos
+- 👤 Pasajeros
+- 📋 Reservas
+- 🧳 Equipaje
 
-### PASAJERO
+---
 
-- num_pasaporte (PK)
-- nombre_completo
-- fecha_nacimiento
-- nacionalidad
-- telefono_correo
+## 🔗 Relaciones entre entidades
 
-### EMPLEADO
+Las principales relaciones representadas en el modelo son:
 
-- rut (PK)
-- nombre_completo
-- direccion
-- sueldo_base
-- fecha_ingreso
-- genero
-- telefono_movil
-- telefono_contacto
+| Entidades | Relación |
+|---|---|
+| **Avión — Vuelo** | Un avión puede realizar uno o varios vuelos. |
+| **Empleado — Piloto** | Un empleado puede corresponder a un piloto. |
+| **Empleado — Administrativo** | Un empleado puede corresponder a un administrativo. |
+| **Vuelo — Reserva** | Un vuelo puede tener una o varias reservas. |
+| **Pasajero — Reserva** | Un pasajero puede realizar una o varias reservas. |
+| **Pasajero — Equipaje** | Un pasajero puede tener uno o varios equipajes. |
+| **Empleado — Reserva** | Un empleado puede gestionar una o varias reservas. |
 
-### VUELO
+Las relaciones se representan mediante **claves foráneas y cardinalidades** dentro del modelo.
 
-- num_vuelo (PK)
-- fecha_salida
-- fecha_llegada
-- hora_salida
+---
 
-### RESERVA
+## 🛠️ Herramienta utilizada
 
-- num_reserva (PK)
-- fecha_reserva
-- fecha_viaje
-- estado
-- num_pasaporte (FK)
-- rut (FK)
-- num_vuelo (FK)
+**Oracle SQL Data Modeler**
 
-## 🔗 Relaciones
+---
 
-La tabla RESERVA se relaciona con:
+## 📐 Modelo Entidad-Relación
+<img width="1600" height="1208" alt="WhatsApp Image 2026-08-21 at 12 01 35" src="https://github.com/user-attachments/assets/5c2805bf-702a-42f0-9038-2089f4941b4b" />
 
-- PASAJERO mediante num_pasaporte.
-- EMPLEADO mediante rut.
-- VUELO mediante num_vuelo.
+---
+
+## 🔑 Elementos principales
+
+- **PK:** Claves primarias para identificar registros.
+- **FK:** Claves foráneas para establecer relaciones.
+- **Cardinalidad:** Define la cantidad de elementos que pueden relacionarse.
+- **Atributos:** Representan las características de cada entidad.
+- **Tipos de datos:** Definen el formato de la información almacenada.
+
+---
 
 
-
-Proyecto académico — BT Airways
+**Duoc UC — Modelamiento de Bases de Datos**

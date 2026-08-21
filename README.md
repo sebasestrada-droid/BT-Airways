@@ -2,7 +2,6 @@
 
 <p align="center">
   <strong>Proyecto de Modelamiento de Bases de Datos</strong><br>
-  Duoc UC
 </p>
 
 ---
@@ -62,6 +61,3 @@ Las relaciones se representan mediante **claves foráneas y cardinalidades** den
 - **Tipos de datos:** Definen el formato de la información almacenada.
 
 ---
-
-
-**Duoc UC — Modelamiento de Bases de Datos**

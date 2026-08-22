@@ -1,8 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Linea_aerea_BT" id="A6C580D8-6F4A-23E2-E0E6-09586C5FED43" version="3.5">
-<createdBy>Consuelo</createdBy>
-<createdTime>2026-08-20 20:02:28 UTC</createdTime>
-<ownerDesignName>Linea_aerea_BT&amp;Airways</ownerDesignName>
-<capitalNames>false</capitalNames>
-<designId>A6C580D8-6F4A-23E2-E0E6-09586C5FED43</designId>
-</OSDM_Design>
